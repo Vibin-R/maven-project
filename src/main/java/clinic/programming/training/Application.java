@@ -1,11 +1,14 @@
  package clinic.programming.training;
 import java.util.*;
+import org.apache.commons.lang3.StringUtils;
 
 public class Application {
-    public int countWords(String word){
-	String[] s = word.split(" ");
-	return s.length;
-}
+
+	public int countWords(String s){
+		String[] arr = StringUtils.split(s,' ');
+		return (arr==null)?0:arr.length;
+	}
+   
 	public Application() {
         	System.out.println ("Inside Application");
 	}
